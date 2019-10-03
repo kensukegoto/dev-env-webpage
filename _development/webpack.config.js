@@ -14,7 +14,9 @@ module.exports = (mode = "development") => {
               test: /\.js$/, 
               loader: "babel-loader",
               include:[
-                /es6/
+                /es6/,
+                /node_modules\/modal_npm/,
+                /node_modules\/timeline_npm/
               ]
           }
           ]

@@ -1,10 +1,14 @@
 {
-  "name": "development",
+  "name": "_development",
   "version": "1.0.0",
   "description": "",
   "main": "babel.config.js",
-  "browserslist": ["ie >= 11","android >= 5","ios >= 9"],
-  "dependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
   "devDependencies": {
     "@babel/core": "^7.6.2",
     "@babel/preset-env": "^7.6.2",
@@ -21,10 +25,8 @@
     "webpack": "^4.41.0",
     "webpack-stream": "^5.2.1"
   },
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC"
+  "dependencies": {
+    "modal_npm": "git+https://gh-news.nhk.or.jp/ws003/modal_npm#semver:^5.0.0",
+    "timeline_npm": "git+https://gh-news.nhk.or.jp/ws003/timeline_npm#semver:^3.0.0"
+  }
 }
