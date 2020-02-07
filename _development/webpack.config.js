@@ -12,11 +12,11 @@ module.exports = (mode = "development") => {
           rules: [
           { 
               test: /\.js$/, 
-              loader: "babel-loader",
-              include:[
+              loader: "babel-loader", 
+              include: [
                 /es6/,
-                /node_modules\/modal_npm/,
-                /node_modules\/timeline_npm/
+                /\/Applications\/MAMP\/htdocs\/webstaff\/modal/,
+                /\/Applications\/MAMP\/htdocs\/webstaff\/timeline/  
               ]
           }
           ]
