@@ -15,8 +15,7 @@ module.exports = (mode = "development") => {
               loader: "babel-loader", 
               include: [
                 /es6/,
-                /\/Applications\/MAMP\/htdocs\/webstaff\/modal/,
-                /\/Applications\/MAMP\/htdocs\/webstaff\/timeline/  
+                /\/Applications\/MAMP\/htdocs\/webstaff/,
               ]
           }
           ]
