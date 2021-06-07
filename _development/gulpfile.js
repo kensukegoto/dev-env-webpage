@@ -6,6 +6,8 @@ const plumber = require("gulp-plumber");
 const postcss = require("gulp-postcss");
 const autoprefixer = require("autoprefixer");
 const mqpacker = require("css-mqpacker");
+const sourcemaps = require('gulp-sourcemaps');
+const gulpIf = require("gulp-if");
 
 // webpack
 const webpackStream = require("webpack-stream");
@@ -21,6 +23,7 @@ function styles (mode){
         .pipe(plumber({
             errorHandler: notify.onError("Error: <%= error.message %>")
         }))
+        .pipe(gulpIf(mode!=='production',sourcemaps.init()))
         .pipe(sass({
             outputStyle: outputStyle
         }))
@@ -28,6 +31,7 @@ function styles (mode){
             autoprefixer(),
             mqpacker()
         ]))
+        .pipe(gulpIf(mode!=='production',sourcemaps.write()))
         .pipe(gulp.dest("../"));
 }
 

@@ -7,7 +7,11 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
-  "browserslist": ["ie >= 11","android >= 5","ios >= 9"],
+  "browserslist": [
+    "ie >= 11",
+    "android >= 5",
+    "ios >= 9"
+  ],
   "author": "",
   "license": "ISC",
   "devDependencies": {
@@ -19,9 +23,11 @@
     "css-mqpacker": "^7.0.0",
     "gulp": "^4.0.2",
     "gulp-dart-sass": "^0.9.1",
+    "gulp-if": "^3.0.0",
     "gulp-notify": "^3.2.0",
     "gulp-plumber": "^1.2.1",
     "gulp-postcss": "^8.0.0",
+    "gulp-sourcemaps": "^3.0.0",
     "regenerator-runtime": "^0.13.3",
     "webpack": "^4.41.5",
     "webpack-stream": "^5.2.1"

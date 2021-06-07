@@ -14,8 +14,7 @@ module.exports = (mode = "development") => {
               test: /\.js$/, 
               loader: "babel-loader", 
               include: [
-                /es6/,
-                /\/Applications\/MAMP\/htdocs\/webstaff/,
+                /es6/
               ]
           }
           ]
